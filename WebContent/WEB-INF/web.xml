@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>parking11</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>addAdminServlet</servlet-name>
+    <servlet-class>control.HandleAdminAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAdminServlet</servlet-name>
+    <url-pattern>/addAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <servlet-class>control.HandleAdminDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <url-pattern>/deleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>updateAdminServlet</servlet-name>
+    <servlet-class>control.HandleAdminUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateAdminServlet</servlet-name>
+    <url-pattern>/updateAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>control.HandleLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>enterServlet</servlet-name>
+    <servlet-class>control.HandleEnter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enterServlet</servlet-name>
+    <url-pattern>/enterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>outServlet</servlet-name>
+    <servlet-class>control.HandleOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>outServlet</servlet-name>
+    <url-pattern>/outServlet</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>costServlet</servlet-name>
+    <servlet-class>control.HandleCost</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>costServlet</servlet-name>
+    <url-pattern>/costServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>priceServlet</servlet-name>
+    <servlet-class>control.HandlePrice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>priceServlet</servlet-name>
+    <url-pattern>/priceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addInternalVehicleServlet</servlet-name>
+    <servlet-class>control.HandleInternalVehicleAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addInternalVehicleServlet</servlet-name>
+    <url-pattern>/addInternalVehicleServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>deleteInternalVehicleServlet</servlet-name>
+    <servlet-class>control.HandleInternalVehicleDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteInternalVehicleServlet</servlet-name>
+    <url-pattern>/deleteInternalVehicleServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>updateInternalVehicleServlet</servlet-name>
+    <servlet-class>control.HandleInternalVehicleUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateInternalVehicleServlet</servlet-name>
+    <url-pattern>/updateInternalVehicleServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
